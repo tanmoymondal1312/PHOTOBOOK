@@ -1,0 +1,59 @@
+.btn1 {
+    margin: 100px auto;
+    width: 200px; /* Adjusted width */
+    height: 50px; /* Adjusted height */
+    border-radius: 25px; /* Adjusted border-radius */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(45deg, #ff6f61, #e65c50);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn1::before {
+    content: "Book Now"; /* Added content directly */
+    position: absolute;
+    width: 190px; /* Adjusted width */
+    height: 45px; /* Adjusted height */
+    z-index: 1;
+    background-color: rgba(238, 238, 238, 0.8); /* Adjusted background color with opacity */
+    border-radius: 25px; /* Adjusted border-radius */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px; /* Adjusted font-size */
+    font-family: 'Arial Black', Gadget, sans-serif; /* Changed font family */
+    color: #ff6f61; /* Changed text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Added text shadow */
+}
+
+.btn1::after {
+    content: "";
+    width: 250px; /* Adjusted width */
+    height: 250px; /* Adjusted height */
+    position: absolute;
+    border-radius: 50%; /* Adjusted border-radius */
+    background: conic-gradient(
+        #3a7cec 0%12.5%,
+        #2ca24c 12.5%25%,
+        #f1b500 25%37.5%,
+        #e33e2b 37.5%50%,
+        #3a7cec 50%62.5%,
+        #2ca24c 62.5%75%,
+        #f1b500 75%87.5%,
+        #e33e2b 87.5%100%
+    );
+    animation: border-animation 5s linear infinite;
+    z-index: 0;
+}
+
+@keyframes border-animation {
+    to {
+        transform: rotate(360deg);
+    }
+}
