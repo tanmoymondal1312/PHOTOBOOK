@@ -6171,7 +6171,7 @@ button.bg-dark:focus {
 
 .mb-4,
 .my-4 {
-  margin-bottom: 1.5rem !important; }
+  margin-bottom: 0rem !important; }
 
 .ml-4,
 .mx-4 {
@@ -7598,7 +7598,7 @@ h1, h2, h3, h4, h5,
     .hero-wrap .text .btn-custom {
       font-weight: 400;
       color: #b3b3b3;
-      border-bottom: 2px solid #b3b3b3; }
+      border-bottom: 10px solid #b3b3b3; }
 
 .photography-entry {
   height: 270px;

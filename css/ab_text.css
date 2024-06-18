@@ -1,0 +1,32 @@
+/* Ensure proper layout and scrolling */
+#pageWrapper, #mainWrapper {
+    height: 100%;
+    overflow: auto;
+  }
+  #bodyWrapper {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Adjust as needed */
+  }
+  /* Adjust specific styles for your elements as needed */
+  #heroWrapper {
+    height: 100vh; /* Ensure full viewport height for hero section */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #heroTextWrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    z-index: 1; /* Ensure text appears above background */
+    position: relative;
+  }
+  #heroTextWrapper h1, #heroTextWrapper h2, #heroTextWrapper h5, #heroTextWrapper p {
+    color: #333; /* Adjust text color */
+  }
